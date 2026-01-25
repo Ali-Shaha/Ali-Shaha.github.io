@@ -11,35 +11,46 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Mechanical Engineering, Aalto University, 2019-2024
+* M.Sc. in Mechanical Engineering, Tarbiat Modares University, 2015-2018  
+* B.Sc. in Mechanical Engineering, Amirkabir University of Technology, 2011-2015
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **2023-Present: CFD Expert, Elcogen Oy**
+  * CFD modeling of solid oxide fuel cells and electrolyzers at unit-layer, stack, and module scales
+  * Developing thermo-electrochemical simulation models
+  * Stack-module thermal balance concepts and CFD simulation methodologies
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **2019-2023: Research Assistant , Aalto University**
+  * Conducted combustion modeling on gasoline surrogates (PRF and PRF-ethanol blends)
+  * Performed chemical kinetics analysis (ignition delay, flame speed) and developed skeletal mechanisms
+  * Simulated end-gas flame-ignition characteristics and hotspot-induced auto-ignition regimes (knock/super-knock)
+  * Implemented analytical Jacobian calculators and ODE solvers for faster chemistry solutions
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **2017-2019: Researcher, Tarbiat Modares University (CFD LAB)**
+  * Conducted research on Large Eddy Simulation (LES) of Turbulent Jet Flames
+  * Investigated extinction and re-ignition events in turbulent combustion
+  * Advised MSc students for simulation and C++ programming in OpenFOAM
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming Languages:** C/C++, Python, MATLAB, R, Fortran, LaTeX
+* **CFD & Engineering Software:** OpenFOAM, COMSOL, ANSYS Fluent, Cantera, Star CCM+, CHEMKIN
+* **Computational Methods:** Finite Volume, Finite Difference, Statistical Modeling
+* **Research Areas:**
+  * Computational Fluid Dynamics (CFD)
+  * Electrochemistry & Multiphysics Modeling 
+  * Combustion Modeling & Chemical Kinetics
+  * Turbulence Modeling (LES, RANS)
+  * Multi-Phase Fluid Dynamics
+  * Internal Combustion Engines
+  * High-Performance Computing
+  * Optimization Techniques
+
+Languages
+======
+* Persian (Native), English (Fluent), Finnish (Intermediate)
 
 Publications
 ======
@@ -59,6 +70,6 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "electiclimes" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Ali's Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Ali Shahanaghi"
+description              : &description "Ali Shahanaghi's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ali-shaha.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,14 +23,14 @@ repository               : "ali-Shaha.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=FTAzxcYAAAAJ&citpid=2"
+  avatar           : "https://media.licdn.com/dms/image/v2/D4D03AQEfCfEMiv486Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708090860895?e=1770854400&v=beta&t=QQU220CcFSozi5YT6cxSdPptZVDjd0iDg95TSzRO8r0"
   name             : "Ali Shahanaghi"
   pronouns         : # example: "she/her"  
-  bio              : "CFD expert"
+  bio              : "CFD Expert (D.Sc)"
   location         : "Finland"
   employer         : #"Red Brick University"
   uri              : # URL
-  email            : "shahanaghi.ali@gmail.com" 
+  email            : "shahanaghi.mech@gmail.com" 
 
   # Academic websites
   academia         : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : www.linkedin.com/in/shahanaghi-ali # Username
+  linkedin         : shahanaghi-ali # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -86,10 +86,13 @@ author:
 publication_category:
   books:
     title: 'Books'
+  thesis:
+    title: 'Thesis'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

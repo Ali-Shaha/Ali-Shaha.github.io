@@ -1,0 +1,236 @@
+/* ==========================================================================
+   MINT THEME - DARK VERSION
+   ========================================================================== */
+
+/* Updated green palette for dark mode */
+$primary-color              : #98C326;  /* RGB(152, 195, 38) - Medium Lime Green as primary */
+$secondary-color           : #709F19;  /* RGB(112, 159, 25) - Olive Green */
+$accent-color              : #C3E647;  /* RGB(195, 230, 71) - Light Lime Green */
+$dark-accent               : #4C7A0F;  /* RGB(76, 122, 15) - Dark Forest Green */
+$darker-accent             : #224706;  /* RGB(34, 71, 6) - Very Dark Green */
+
+/* Dark theme backgrounds with green undertones */
+$background                 : #0c120f;  /* Very dark green-black */
+$background-light           : #141c18;  /* Slightly lighter dark green */
+$background-lighter        : #1d2722;   /* Medium dark green */
+$background-card           : #19231e;   /* Card background */
+
+/* Text colors for dark mode */
+$text                      : #e0e7e4;   /* Off-white with green tint */
+$text-muted                : #9db0a9;   /* Muted green-gray */
+$text-light                : #c6d4cf;   /* Light text for highlights */
+
+/* Link colors optimized for dark background */
+$link                      : #98C326;   /* Medium Lime Green */
+$link-dark                 : #C3E647;   /* Light Lime Green for hover */
+$link-light                : #709F19;   /* Olive Green for visited */
+$footer                    : #080d0b;   /* Darker than background */
+$border                    : #25312b;   /* Dark green borders */
+$border-light              : #35433d;   /* Lighter borders for highlights */
+
+/* Color codes used for the site - adjusted for dark theme */
+$danger-color               : #e57373;  /* Softer red for dark mode */
+$info-color                 : #4fc3f7;  /* Cyan blue */
+$notice-color               : #C3E647;  /* Light Lime Green */
+$success-color              : #81c784;  /* Soft green */
+$warning-color              : #ffb74d;  /* Soft orange */
+
+/* Other basic settings for the template */
+$border-radius              : 5px;
+$box-shadow                 : 0 2px 8px rgba(0, 0, 0, 0.3);
+$box-shadow-light           : 0 1px 3px rgba(34, 71, 6, 0.15); /* Green-tinted shadow */
+$global-transition          : all 0.25s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+  /* Primary colors */
+  --global-base-color                 : #{$primary-color};
+  --global-secondary-color           : #{$secondary-color};
+  --global-accent-color              : #{$accent-color};
+  
+  /* Background colors */
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-card};
+  --global-code-text-color            : #{$accent-color};
+  --global-card-bg-color              : #{$background-card};
+  
+  /* Text colors */
+  --global-fig-caption-color          : #{$text-muted};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-text-color-lighter         : #{$text-light};
+  
+  /* Link colors */
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  
+  /* Table colors */
+  --global-thead-color                : #{$background-lighter};
+  
+  /* Gradient backgrounds for dark mode */
+  --global-gradient-primary          : linear-gradient(135deg, #{$dark-accent} 0%, #{$primary-color} 100%);
+  --global-gradient-secondary        : linear-gradient(135deg, #{$darker-accent} 0%, #{$secondary-color} 100%);
+  --global-gradient-accent           : linear-gradient(135deg, rgba(195, 230, 71, 0.15) 0%, rgba(152, 195, 38, 0.05) 100%);
+  
+  /* Shadow variables */
+  --global-box-shadow                 : #{$box-shadow};
+  --global-box-shadow-light           : #{$box-shadow-light};
+}
+
+/* Footer styling for dark mode */
+html[data-theme="dark"] {
+  footer {
+    color: #{$text-muted};
+    background: linear-gradient(135deg, #{$footer} 0%, #{$background} 100%);
+    border-top: 1px solid #{$border};
+    
+    a {
+      color: #{$accent-color};
+      
+      &:hover {
+        color: #{$link-dark};
+      }
+    }
+  }
+}
+
+/* Dark mode specific button styling */
+html[data-theme="dark"] {
+  .btn--primary {
+    background-color: #{$primary-color};
+    color: #121212; /* Dark text on light button */
+    border-color: #{$secondary-color};
+    
+    &:hover {
+      background-color: #{$accent-color};
+      box-shadow: 0 4px 12px rgba(195, 230, 71, 0.2);
+    }
+  }
+  
+  .btn--secondary {
+    background-color: #{$background-card};
+    color: #{$text};
+    border-color: #{$border};
+    
+    &:hover {
+      background-color: #{$background-lighter};
+      border-color: #{$primary-color};
+    }
+  }
+}
+
+/* Dark mode sidebar */
+html[data-theme="dark"] {
+  .sidebar {
+    border-right: 3px solid #{$dark-accent};
+    background-color: #{$background-light};
+    
+    a {
+      color: #{$text-light};
+      
+      &:hover {
+        color: #{$accent-color};
+      }
+    }
+  }
+}
+
+/* Publication styling for dark mode */
+html[data-theme="dark"] {
+  .publication__title a {
+    color: #{$accent-color};
+    
+    &:hover {
+      color: #{$link-dark};
+      text-decoration-color: #{$primary-color};
+    }
+  }
+  
+  .publication__content {
+    background-color: #{$background-card};
+    border: 1px solid #{$border};
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+      border-color: #{$primary-color};
+      box-shadow: 0 4px 8px rgba(152, 195, 38, 0.15);
+    }
+  }
+}
+
+/* Teaching cards for dark mode */
+html[data-theme="dark"] {
+  .teaching__item {
+    background-color: #{$background-card};
+    border-left: 4px solid #{$secondary-color};
+    border: 1px solid #{$border};
+    
+    &:hover {
+      border-left-color: #{$accent-color};
+      background-color: rgba(195, 230, 71, 0.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+/* Code blocks in dark mode */
+html[data-theme="dark"] {
+  pre, code {
+    background-color: #{$background-card};
+    border: 1px solid #{$border};
+    
+    &:hover {
+      border-color: #{$dark-accent};
+    }
+  }
+}
+
+/* Table styling for dark mode */
+html[data-theme="dark"] {
+  table {
+    background-color: #{$background-card};
+    
+    th {
+      background-color: #{$background-lighter};
+      color: #{$accent-color};
+    }
+    
+    tr:nth-child(even) {
+      background-color: rgba(34, 71, 6, 0.1);
+    }
+    
+    tr:hover {
+      background-color: rgba(152, 195, 38, 0.1);
+    }
+  }
+}
+
+/* Responsive adjustments for dark mode */
+@media (min-width: $sidebar-screen-min-width) {
+  html[data-theme="dark"] {
+    .page__inner-wrap {
+      border-left: 1px solid #{$border};
+    }
+  }
+}
+
+/* Smooth theme transition */
+html[data-theme="dark"] {
+  *, *::before, *::after {
+    transition: background-color 0.3s ease, 
+                border-color 0.3s ease,
+                color 0.3s ease,
+                box-shadow 0.3s ease;
+  }
+}
