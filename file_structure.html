@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .folder {
+            cursor: pointer;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .nested {
+            display: none;
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .modified {
+            color: red;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>File Structure: .</h2>
+    <div class="timestamp">Last updated: 2026-01-26 20:09:10</div>
+    <ul>
+    <li>
+      <span class="folder" onclick="toggleFolder(this)">📁 . </span>
+      <ul class="nested" style="margin-left: 0px">
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 assets </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 css </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 academicons.css </li>
+                <li>📄 academicons.min.css </li>
+                <li>📄 collapse.css </li>
+                <li>📄 main.scss </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 fonts </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 academicons.eot </li>
+                <li>📄 academicons.svg </li>
+                <li>📄 academicons.ttf </li>
+                <li>📄 academicons.woff </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 js </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 collapse.js </li>
+                <li>📄 _main.js </li>
+                <li>📄 main.min.js </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 plugins </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 jquery.greedy-navigation.js </li>
+                  </ul>
+                </li>
+                <li>📄 theme.js </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 webfonts </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 fa-brands-400.ttf </li>
+                <li>📄 fa-brands-400.woff2 </li>
+                <li>📄 fa-regular-400.ttf </li>
+                <li>📄 fa-regular-400.woff2 </li>
+                <li>📄 fa-solid-900.ttf </li>
+                <li>📄 fa-solid-900.woff2 </li>
+                <li>📄 fa-v4compatibility.ttf </li>
+                <li>📄 fa-v4compatibility.woff2 </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>📄 _config_docker.yml </li>
+        <li>📄 _config.yml </li>
+        <li>📄 CONTRIBUTING.md </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _data </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 authors.yml </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 comments </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 layout-comments </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 comment-1470944006665.yml </li>
+                    <li>📄 comment-1470944162041.yml </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 markup-syntax-highlighting </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 comment-1470969665387.yml </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 welcome-to-jekyll </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 comment-1470942205700.yml </li>
+                    <li>📄 comment-1470942247755.yml </li>
+                    <li>📄 comment-1470942265819.yml </li>
+                    <li>📄 comment-1470942493518.yml </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>📄 cv.json </li>
+            <li>📄 navigation.yml </li>
+            <li>📄 ui-text.yml </li>
+          </ul>
+        </li>
+        <li>📄 docker-compose.yaml </li>
+        <li>📄 Dockerfile </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _drafts </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 post-draft.md </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 files </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 bibtex1.bib </li>
+            <li>📄 paper1.pdf </li>
+            <li>📄 paper2.pdf </li>
+            <li>📄 paper3.pdf </li>
+            <li>📄 slides1.pdf </li>
+            <li>📄 slides2.pdf </li>
+            <li>📄 slides3.pdf </li>
+          </ul>
+        </li>
+        <li>📄 file_structure.html </li>
+        <li>📄 Gemfile </li>
+        <li>📄 Gemfile.lock </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 images </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 500x300.png </li>
+            <li>📄 apple-touch-icon-180x180.png </li>
+            <li>📄 bio-photo-2.jpg </li>
+            <li>📄 bio-photo.jpg </li>
+            <li>📄 editing-talk.png </li>
+            <li>📄 favicon-192x192.png </li>
+            <li>📄 favicon-32x32.png </li>
+            <li>📄 favicon-512x512.png </li>
+            <li>📄 favicon.ico </li>
+            <li>📄 favicon.svg </li>
+            <li>📄 manifest.json </li>
+            <li>📄 profile.png </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 themes </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 homepage-air-dark.png </li>
+                <li>📄 homepage-air-light.png </li>
+                <li>📄 homepage-dark.png </li>
+                <li>📄 homepage-light.png </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _includes </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 analytics.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 analytics-providers </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 custom.html </li>
+                <li>📄 google-analytics-4.html </li>
+                <li>📄 google.html </li>
+                <li>📄 google-universal.html </li>
+              </ul>
+            </li>
+            <li>📄 archive-single-cv.html </li>
+            <li>📄 archive-single.html </li>
+            <li>📄 archive-single-talk-cv.html </li>
+            <li>📄 archive-single-talk.html </li>
+            <li>📄 author-profile.html </li>
+            <li>📄 base_path </li>
+            <li>📄 breadcrumbs.html </li>
+            <li>📄 browser-upgrade.html </li>
+            <li>📄 category-list.html </li>
+            <li>📄 comment.html </li>
+            <li>📄 comments.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 comments-providers </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 custom.html </li>
+                <li>📄 discourse.html </li>
+                <li>📄 disqus.html </li>
+                <li>📄 facebook.html </li>
+                <li>📄 google-plus.html </li>
+                <li>📄 scripts.html </li>
+                <li>📄 staticman.html </li>
+              </ul>
+            </li>
+            <li>📄 cv-template.html </li>
+            <li>📄 feature_row </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 footer </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 custom.html </li>
+              </ul>
+            </li>
+            <li>📄 footer.html </li>
+            <li>📄 gallery </li>
+            <li>📄 group-by-array </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 head </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 custom.html </li>
+              </ul>
+            </li>
+            <li>📄 head.html </li>
+            <li>📄 masthead.html </li>
+            <li>📄 nav_list </li>
+            <li>📄 page__hero.html </li>
+            <li>📄 page__taxonomy.html </li>
+            <li>📄 paginator.html </li>
+            <li>📄 post_pagination.html </li>
+            <li>📄 read-time.html </li>
+            <li>📄 scripts.html </li>
+            <li>📄 seo.html </li>
+            <li>📄 sidebar.html </li>
+            <li>📄 social-share.html </li>
+            <li>📄 tag-list.html </li>
+            <li>📄 toc </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _layouts </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 archive.html </li>
+            <li>📄 archive-taxonomy.html </li>
+            <li>📄 compress.html </li>
+            <li>📄 cv-layout.html </li>
+            <li>📄 default.html </li>
+            <li>📄 single.html </li>
+            <li>📄 splash.html </li>
+            <li>📄 talk.html </li>
+          </ul>
+        </li>
+        <li>📄 LICENSE </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 markdown_generator </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 OrcidToBib.ipynb </li>
+            <li>📄 publications.ipynb </li>
+            <li>📄 publications.py </li>
+            <li>📄 publications.tsv </li>
+            <li>📄 PubsFromBib.ipynb </li>
+            <li>📄 pubsFromBib.py </li>
+            <li>📄 readme.md </li>
+            <li>📄 talks.ipynb </li>
+            <li>📄 talks.py </li>
+            <li>📄 talks.tsv </li>
+          </ul>
+        </li>
+        <li>📄 package.json </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _pages </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 404.md </li>
+            <li>📄 about.md </li>
+            <li>📄 archive-layout-with-content.md </li>
+            <li>📄 category-archive.html </li>
+            <li>📄 collection-archive.html </li>
+            <li>📄 cv-json.md </li>
+            <li>📄 cv.md </li>
+            <li>📄 markdown.md </li>
+            <li>📄 non-menu-page.md </li>
+            <li>📄 page-archive.html </li>
+            <li>📄 portfolio.html </li>
+            <li>📄 publications.html </li>
+            <li>📄 sitemap.md </li>
+            <li>📄 tag-archive.html </li>
+            <li>📄 talkmap.html </li>
+            <li>📄 talks.html </li>
+            <li>📄 teaching.html </li>
+            <li>📄 terms.md </li>
+            <li>📄 year-archive.html </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _portfolio </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 portfolio-1.md </li>
+            <li>📄 portfolio-2.html </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _posts </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 2012-08-14-blog-post-1.md </li>
+            <li>📄 2013-08-14-blog-post-2.md </li>
+            <li>📄 2014-08-14-blog-post-3.md </li>
+            <li>📄 2015-08-14-blog-post-4.md </li>
+            <li>📄 2199-01-01-future-post.md </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _publications </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 2021-11-15-fuelpaper.md </li>
+            <li>📄 2022-02-01-aipdlbfoam.md </li>
+            <li>📄 2023-12-01-aiparcfoam.md </li>
+            <li>📄 2023-12-10-tandfpaper1.md </li>
+            <li>📄 2024-03-08-phd-thesis.md </li>
+            <li>📄 2024-08-17-tandfpaper2.md </li>
+            <li>📄 2025-11-24-SOFCXIX1.md </li>
+            <li>📄 2025-11-24-SOFCXIX2.md </li>
+          </ul>
+        </li>
+        <li>📄 README.md </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _sass </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 include </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 _mixins.scss </li>
+                <li>📄 _utilities.scss </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 layout </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 _archive.scss </li>
+                <li>📄 _base.scss </li>
+                <li>📄 _buttons.scss </li>
+                <li>📄 _footer.scss </li>
+                <li>📄 _forms.scss </li>
+                <li>📄 _json_cv.scss </li>
+                <li>📄 _masthead.scss </li>
+                <li>📄 _navigation.scss </li>
+                <li>📄 _notices.scss </li>
+                <li>📄 _page.scss </li>
+                <li>📄 _reset.scss </li>
+                <li>📄 _sidebar.scss </li>
+                <li>📄 _tables.scss </li>
+              </ul>
+            </li>
+            <li>📄 _syntax.scss </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 theme </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 _air_dark.scss </li>
+                <li>📄 _air_light.scss </li>
+                <li>📄 _contrast_dark.scss </li>
+                <li>📄 _contrast_light.scss </li>
+                <li>📄 _default_dark.scss </li>
+                <li>📄 _default_light.scss </li>
+                <li>📄 _dirt_dark.scss </li>
+                <li>📄 _dirt_light.scss </li>
+                <li>📄 _electiclimes_dark.scss </li>
+                <li>📄 _electiclimes_light.scss </li>
+                <li>📄 _mint_dark.scss </li>
+                <li>📄 _mint_light.scss </li>
+                <li>📄 _sunrise_dark.scss </li>
+                <li>📄 _sunrise_light.scss </li>
+              </ul>
+            </li>
+            <li>📄 _themes.scss </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 vendor </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 breakpoint </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 _breakpoint.scss </li>
+                    <li>📄 _context.scss </li>
+                    <li>📄 _helpers.scss </li>
+                    <li>📄 _legacy-settings.scss </li>
+                    <li>📄 _no-query.scss </li>
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 parsers </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 double </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 _default-pair.scss </li>
+                            <li>📄 _default.scss </li>
+                            <li>📄 _double-string.scss </li>
+                          </ul>
+                        </li>
+                        <li>📄 _double.scss </li>
+                        <li>📄 _query.scss </li>
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 resolution </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 _resolution.scss </li>
+                          </ul>
+                        </li>
+                        <li>📄 _resolution.scss </li>
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 single </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 _default.scss </li>
+                          </ul>
+                        </li>
+                        <li>📄 _single.scss </li>
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 triple </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 _default.scss </li>
+                          </ul>
+                        </li>
+                        <li>📄 _triple.scss </li>
+                      </ul>
+                    </li>
+                    <li>📄 _parsers.scss </li>
+                    <li>📄 _respond-to.scss </li>
+                    <li>📄 _settings.scss </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 font-awesome </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 _animated.scss </li>
+                    <li>📄 _bordered-pulled.scss </li>
+                    <li>📄 brands.scss </li>
+                    <li>📄 _core.scss </li>
+                    <li>📄 _fixed-width.scss </li>
+                    <li>📄 fontawesome.scss </li>
+                    <li>📄 _functions.scss </li>
+                    <li>📄 _icons.scss </li>
+                    <li>📄 _list.scss </li>
+                    <li>📄 _mixins.scss </li>
+                    <li>📄 regular.scss </li>
+                    <li>📄 _rotated-flipped.scss </li>
+                    <li>📄 _screen-reader.scss </li>
+                    <li>📄 _shims.scss </li>
+                    <li>📄 _sizing.scss </li>
+                    <li>📄 solid.scss </li>
+                    <li>📄 _stacked.scss </li>
+                    <li>📄 v4-shims.scss </li>
+                    <li>📄 _variables.scss </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 susy </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 _su.scss </li>
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 susy </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 language </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 susy </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 _background.scss </li>
+                                <li>📄 _bleed.scss </li>
+                                <li>📄 _box-sizing.scss </li>
+                                <li>📄 _breakpoint-plugin.scss </li>
+                                <li>📄 _container.scss </li>
+                                <li>📄 _context.scss </li>
+                                <li>📄 _gallery.scss </li>
+                                <li>📄 _grids.scss </li>
+                                <li>📄 _gutters.scss </li>
+                                <li>📄 _isolate.scss </li>
+                                <li>📄 _margins.scss </li>
+                                <li>📄 _padding.scss </li>
+                                <li>📄 _rows.scss </li>
+                                <li>📄 _settings.scss </li>
+                                <li>📄 _span.scss </li>
+                                <li>📄 _validation.scss </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 susyone </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 _background.scss </li>
+                                <li>📄 _functions.scss </li>
+                                <li>📄 _grid.scss </li>
+                                <li>📄 _isolation.scss </li>
+                                <li>📄 _margin.scss </li>
+                                <li>📄 _media.scss </li>
+                                <li>📄 _padding.scss </li>
+                                <li>📄 _settings.scss </li>
+                              </ul>
+                            </li>
+                            <li>📄 _susyone.scss </li>
+                            <li>📄 _susy.scss </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 output </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 float </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 _container.scss </li>
+                                <li>📄 _end.scss </li>
+                                <li>📄 _isolate.scss </li>
+                                <li>📄 _span.scss </li>
+                              </ul>
+                            </li>
+                            <li>📄 _float.scss </li>
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 shared </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 _background.scss </li>
+                                <li>📄 _container.scss </li>
+                                <li>📄 _direction.scss </li>
+                                <li>📄 _inspect.scss </li>
+                                <li>📄 _margins.scss </li>
+                                <li>📄 _output.scss </li>
+                                <li>📄 _padding.scss </li>
+                              </ul>
+                            </li>
+                            <li>📄 _shared.scss </li>
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 support </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 _background.scss </li>
+                                <li>📄 _box-sizing.scss </li>
+                                <li>📄 _clearfix.scss </li>
+                                <li>📄 _prefix.scss </li>
+                                <li>📄 _rem.scss </li>
+                                <li>📄 _support.scss </li>
+                              </ul>
+                            </li>
+                            <li>📄 _support.scss </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 su </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 _grid.scss </li>
+                            <li>📄 _settings.scss </li>
+                            <li>📄 _utilities.scss </li>
+                            <li>📄 _validation.scss </li>
+                          </ul>
+                        </li>
+                        <li>📄 _su.scss </li>
+                      </ul>
+                    </li>
+                    <li>📄 _susyone.scss </li>
+                    <li>📄 _susy.scss </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 scripts </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 cv_markdown_to_json.py </li>
+            <li>📄 update_cv_json.sh </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _site </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 404.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 about </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>📄 about.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 archive-layout-with-content </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 assets </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 css </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 academicons.css </li>
+                    <li>📄 academicons.min.css </li>
+                    <li>📄 collapse.css </li>
+                    <li>📄 main.css </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 fonts </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 academicons.eot </li>
+                    <li>📄 academicons.svg </li>
+                    <li>📄 academicons.ttf </li>
+                    <li>📄 academicons.woff </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 js </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 collapse.js </li>
+                    <li>📄 main.min.js </li>
+                    <li>📄 theme.js </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 webfonts </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 fa-brands-400.ttf </li>
+                    <li>📄 fa-brands-400.woff2 </li>
+                    <li>📄 fa-regular-400.ttf </li>
+                    <li>📄 fa-regular-400.woff2 </li>
+                    <li>📄 fa-solid-900.ttf </li>
+                    <li>📄 fa-solid-900.woff2 </li>
+                    <li>📄 fa-v4compatibility.ttf </li>
+                    <li>📄 fa-v4compatibility.woff2 </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 categories </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 collection-archive </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>📄 CONTRIBUTING.md </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 cv </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 cv-json </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>📄 docker-compose.yaml </li>
+            <li>📄 feed.xml </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 files </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 bibtex1.bib </li>
+                <li>📄 paper1.pdf </li>
+                <li>📄 paper2.pdf </li>
+                <li>📄 paper3.pdf </li>
+                <li>📄 slides1.pdf </li>
+                <li>📄 slides2.pdf </li>
+                <li>📄 slides3.pdf </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 https: </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 iopscience.iop.org </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 article </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 10.1149 </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 MA2025-031182mtgabs </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 meta.html </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 MA2025-03163mtgabs </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 meta.html </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 pubs.aip.org </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 aip </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 pof </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 article </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>
+                                  <span class="folder" onclick="toggleFolder(this)">📁 34 </span>
+                                  <ul class="nested" style="margin-left: 140px">
+                                    <li>
+                                      <span class="folder" onclick="toggleFolder(this)">📁 2 </span>
+                                      <ul class="nested" style="margin-left: 160px">
+                                        <li>
+                                          <span class="folder" onclick="toggleFolder(this)">📁 021801 </span>
+                                          <ul class="nested" style="margin-left: 180px">
+                                            <li>📄 2846511.html </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <span class="folder" onclick="toggleFolder(this)">📁 35 </span>
+                                  <ul class="nested" style="margin-left: 140px">
+                                    <li>
+                                      <span class="folder" onclick="toggleFolder(this)">📁 12 </span>
+                                      <ul class="nested" style="margin-left: 160px">
+                                        <li>
+                                          <span class="folder" onclick="toggleFolder(this)">📁 126102 </span>
+                                          <ul class="nested" style="margin-left: 180px">
+                                            <li>📄 2926377.html </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 research.aalto.fi </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 en </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 publications </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 a-diagnostic-approach-to-assess-the-effect-of-temperature-stratif </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 index.html </li>
+                              </ul>
+                            </li>
+                            <li>📄 temperature-stratification-induced-ignition-regimes-for-gasoline-.html </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 urn.fi </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 URN:ISBN:978-952-64-1689-2.html </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 www.sciencedirect.com </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 science </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 article </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>
+                              <span class="folder" onclick="toggleFolder(this)">📁 pii </span>
+                              <ul class="nested" style="margin-left: 120px">
+                                <li>📄 S0016236121012801.html </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 images </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 500x300.png </li>
+                <li>📄 apple-touch-icon-180x180.png </li>
+                <li>📄 bio-photo-2.jpg </li>
+                <li>📄 bio-photo.jpg </li>
+                <li>📄 editing-talk.png </li>
+                <li>📄 favicon-192x192.png </li>
+                <li>📄 favicon-32x32.png </li>
+                <li>📄 favicon-512x512.png </li>
+                <li>📄 favicon.ico </li>
+                <li>📄 favicon.svg </li>
+                <li>📄 manifest.json </li>
+                <li>📄 profile.png </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 themes </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 homepage-air-dark.png </li>
+                    <li>📄 homepage-air-light.png </li>
+                    <li>📄 homepage-dark.png </li>
+                    <li>📄 homepage-light.png </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>📄 index.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 markdown </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 markdown_generator </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 OrcidToBib.ipynb </li>
+                <li>📄 publications.ipynb </li>
+                <li>📄 publications.py </li>
+                <li>📄 publications.tsv </li>
+                <li>📄 PubsFromBib.ipynb </li>
+                <li>📄 pubsFromBib.py </li>
+                <li>📄 readme.md </li>
+                <li>📄 talks.ipynb </li>
+                <li>📄 talks.py </li>
+                <li>📄 talks.tsv </li>
+              </ul>
+            </li>
+            <li>📄 markdown.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 md </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 nmp </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>📄 nmp.html </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 non-menu-page </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 page-archive </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 portfolio </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 portfolio-1 </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 index.html </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 portfolio-2 </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 index.html </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 posts </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 2012 </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 08 </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 blog-post-1 </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 index.html </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 blog-post-4 </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 index.html </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 2013 </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 08 </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 blog-post-2 </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 index.html </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 2014 </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>
+                      <span class="folder" onclick="toggleFolder(this)">📁 08 </span>
+                      <ul class="nested" style="margin-left: 80px">
+                        <li>
+                          <span class="folder" onclick="toggleFolder(this)">📁 blog-post-3 </span>
+                          <ul class="nested" style="margin-left: 100px">
+                            <li>📄 index.html </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 publications </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>📄 redirects.json </li>
+            <li>📄 resume.html </li>
+            <li>📄 resume-json.html </li>
+            <li>📄 robots.txt </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 scripts </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 cv_markdown_to_json.py </li>
+                <li>📄 update_cv_json.sh </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 sitemap </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>📄 sitemap.xml </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 tags </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 talkmap </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 leaflet_dist </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 leaflet.markercluster.js </li>
+                    <li>📄 leaflet.markercluster-src.js </li>
+                    <li>📄 MarkerCluster.css </li>
+                    <li>📄 MarkerCluster.Default.css </li>
+                    <li>📄 screen.css </li>
+                  </ul>
+                </li>
+                <li>📄 map.html </li>
+                <li>📄 org-locations.js </li>
+              </ul>
+            </li>
+            <li>📄 talkmap.html </li>
+            <li>📄 talkmap.ipynb </li>
+            <li>📄 talkmap_out.ipynb </li>
+            <li>📄 talkmap.py </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 talks </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 teaching </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 2014-spring-teaching-1.html </li>
+                <li>📄 2017-supervision-msc-openfoam.html </li>
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 terms </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 wordpress </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>
+                  <span class="folder" onclick="toggleFolder(this)">📁 blog-posts </span>
+                  <ul class="nested" style="margin-left: 60px">
+                    <li>📄 index.html </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 year-archive </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 index.html </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>📄 struct8.sh </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 talkmap </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>
+              <span class="folder" onclick="toggleFolder(this)">📁 leaflet_dist </span>
+              <ul class="nested" style="margin-left: 40px">
+                <li>📄 leaflet.markercluster.js </li>
+                <li>📄 leaflet.markercluster-src.js </li>
+                <li>📄 MarkerCluster.css </li>
+                <li>📄 MarkerCluster.Default.css </li>
+                <li>📄 screen.css </li>
+              </ul>
+            </li>
+            <li>📄 map.html </li>
+            <li>📄 org-locations.js </li>
+          </ul>
+        </li>
+        <li>📄 talkmap.ipynb </li>
+        <li>📄 talkmap_out.ipynb </li>
+        <li>📄 talkmap.py </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _talks </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 2025-11-24-SOFCXIXtalk.md </li>
+          </ul>
+        </li>
+        <li>
+          <span class="folder" onclick="toggleFolder(this)">📁 _teaching </span>
+          <ul class="nested" style="margin-left: 20px">
+            <li>📄 2017-teaching-2.md </li>
+            <li>📄 2020-teaching-1.md </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    </ul>
+    <script>
+        function toggleFolder(element) {
+            const nested = element.parentElement.querySelector('.nested');
+            if (nested) {
+                nested.style.display = nested.style.display === 'block' ? 'none' : 'block';
+                element.textContent = element.textContent.startsWith('📂') ? 
+                    '📁' + element.textContent.slice(2) : 
+                    '📂' + element.textContent.slice(2);
+            }
+        }
+        // Expand first level by default
+        document.querySelector('.folder').click();
+    </script>
+</body>
+</html>

@@ -1,23 +1,67 @@
-# Ignore the contents of the _site directory and other cache directories
+# ============================================
+# Jekyll / GitHub Pages
+# ============================================
 _site/
 .sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Ignore the directory for local files during development
-local/
+# ============================================
+# Development & Script Files
+# ============================================
+# Python/Jupyter
+markdown_generator/
+scripts/
+talkmap.ipynb
+talkmap_out.ipynb
+talkmap.py
+*.py
+*.pyc
+__pycache__/
+*.ipynb
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
+# Shell scripts
+*.sh
+struct8.sh
 
-# Ignore files created by npm
-node_modules
+# ============================================
+# Node/NPM
+# ============================================
+node_modules/
 package-lock.json
 
-# Ignore the vendor file at root level and bundle for alternative installation
+# ============================================
+# Ruby / Bundler
+# ============================================
+Gemfile.lock
 /vendor/
 .bundle/
 
-# Ignore folders related to IDEs
+# ============================================
+# Content Management (Development/Local)
+# ============================================
+_drafts/
+
+# ============================================
+# Large/Unnecessary Files
+# ============================================
+*.pdf
+slides*.pdf
+*.bib
+_posts/2019-01-01-future-post.md
+
+# ============================================
+# IDE & Editor Files
+# ============================================
 .vscode/
 
-# Ignore files created by MacOS
+# ============================================
+# Operating System Files
+# ============================================
 .DS_Store
+Thumbs.db
+
+# ============================================
+# Local Development Directory
+# ============================================
+local/
