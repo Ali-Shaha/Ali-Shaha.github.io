@@ -1,13 +1,21 @@
 /* ==========================================================================
-   MINT THEME - DARK VERSION
+   LIME THEME - DARK VERSION
    ========================================================================== */
 
 /* Updated green palette for dark mode */
-$primary-color              : #98C326;  /* RGB(152, 195, 38) - Medium Lime Green as primary */
-$secondary-color           : #709F19;  /* RGB(112, 159, 25) - Olive Green */
-$accent-color              : #C3E647;  /* RGB(195, 230, 71) - Light Lime Green */
-$dark-accent               : #4C7A0F;  /* RGB(76, 122, 15) - Dark Forest Green */
-$darker-accent             : #224706;  /* RGB(34, 71, 6) - Very Dark Green */
+// $primary-color              : #98C326;  /* RGB(152, 195, 38) - Medium Lime Green as primary */
+// $secondary-color           : #709F19;  /* RGB(112, 159, 25) - Olive Green */
+// $accent-color              : #C3E647;  /* RGB(195, 230, 71) - Light Lime Green */
+// $dark-accent               : #4C7A0F;  /* RGB(76, 122, 15) - Dark Forest Green */
+// $darker-accent             : #224706;  /* RGB(34, 71, 6) - Very Dark Green */
+
+
+$primary-color    : #6A9B1B;  // dominant leaf green (26%)
+$secondary-color  : #8BB920;  // fresh green (22%)
+$accent-color     : #B5D72D;  // lime highlight (17%)
+$dark-accent      : #4C7916;  // deep green (24%)
+$darker-accent    : #24460D;  // forest shadow (10%)
+
 
 /* Dark theme backgrounds with green undertones */
 $background                 : #0c120f;  /* Very dark green-black */
@@ -21,7 +29,8 @@ $text-muted                : #9db0a9;   /* Muted green-gray */
 $text-light                : #c6d4cf;   /* Light text for highlights */
 
 /* Link colors optimized for dark background */
-$link                      : #98C326;   /* Medium Lime Green */
+// $link                      : #98C326;   /* Medium Lime Green */
+$link                      : #8BB920;
 $link-dark                 : #C3E647;   /* Light Lime Green for hover */
 $link-light                : #709F19;   /* Olive Green for visited */
 $footer                    : #080d0b;   /* Darker than background */
@@ -79,8 +88,22 @@ html[data-theme="dark"] {
   --global-thead-color                : #{$background-lighter};
   
   /* Gradient backgrounds for dark mode */
-  --global-gradient-primary          : linear-gradient(135deg, #{$dark-accent} 0%, #{$primary-color} 100%);
-  --global-gradient-secondary        : linear-gradient(135deg, #{$darker-accent} 0%, #{$secondary-color} 100%);
+  // --global-gradient-primary          : linear-gradient(135deg, #{$dark-accent} 0%, #{$primary-color} 100%);
+  // --global-gradient-secondary        : linear-gradient(135deg, #{$darker-accent} 0%, #{$secondary-color} 100%);
+
+  --global-gradient-primary   : linear-gradient(
+  135deg,
+  #{$darker-accent} 0%,
+  #{$dark-accent} 40%,
+  #{$primary-color} 100%
+);
+
+--global-gradient-secondary : linear-gradient(
+  135deg,
+  #{$dark-accent} 0%,
+  #{$secondary-color} 100%
+);
+
   --global-gradient-accent           : linear-gradient(135deg, rgba(195, 230, 71, 0.15) 0%, rgba(152, 195, 38, 0.05) 100%);
   
   /* Shadow variables */
@@ -134,7 +157,7 @@ html[data-theme="dark"] {
 html[data-theme="dark"] {
   .sidebar {
     border-right: 3px solid #{$dark-accent};
-    background-color: #{$background-light};
+    // background-color: #{$background-light};
     
     a {
       color: #{$text-light};
@@ -145,6 +168,8 @@ html[data-theme="dark"] {
     }
   }
 }
+
+
 
 /* Publication styling for dark mode */
 html[data-theme="dark"] {
@@ -216,15 +241,21 @@ html[data-theme="dark"] {
   }
 }
 
-/* Responsive adjustments for dark mode */
+// /* Responsive adjustments for dark mode */
+// @media (min-width: $sidebar-screen-min-width) {
+//   html[data-theme="dark"] {
+//     .page__inner-wrap {
+//       border-left: 1px solid #{$border};
+//     }
+//   }
+// }
 @media (min-width: $sidebar-screen-min-width) {
   html[data-theme="dark"] {
     .page__inner-wrap {
-      border-left: 1px solid #{$border};
+      border-left: none;
     }
   }
 }
-
 /* Smooth theme transition */
 html[data-theme="dark"] {
   *, *::before, *::after {

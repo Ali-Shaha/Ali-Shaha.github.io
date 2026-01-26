@@ -121,9 +121,16 @@ footer {
   }
 }
 
+// /* Responsive adjustments */
+// @media (min-width: $sidebar-screen-min-width) {
+//   .page__inner-wrap {
+//     border-left: 1px solid $border;
+//   }
+// }
+
 /* Responsive adjustments */
 @media (min-width: $sidebar-screen-min-width) {
   .page__inner-wrap {
-    border-left: 1px solid $border;
+    border-left: none;
   }
 }
