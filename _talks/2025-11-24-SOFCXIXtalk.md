@@ -10,4 +10,4 @@ location: "Stockholm, Sweden"
 
 [More information here](https://iopscience.iop.org/article/10.1149/MA2025-03163mtgabs/meta)
 
-The results from numerically investigation of thermal and flow imbalance in multistack configurations was presented. The CFD modeling method for MW-class solid oxide fuel cell/electrolyzer systems introduced. The CFD results of conjugate heat transfer modeling in large-scale SOC modules was presented.
+Presented results from a numerical investigation of thermal and flow imbalances in multi-stack configurations. Introduced a CFD modeling framework for MW-class solid oxide fuel cell and electrolyzer systems. Demonstrated conjugate heat-transfer CFD simulations of large-scale solid oxide cell (SOC) modules.
