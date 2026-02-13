@@ -23,7 +23,7 @@ repository               : "ali-Shaha.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "https://media.licdn.com/dms/image/v2/D4D03AQEfCfEMiv486Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708090860895?e=1770854400&v=beta&t=QQU220CcFSozi5YT6cxSdPptZVDjd0iDg95TSzRO8r0"
+  avatar           : "/images/avatar.webp"
   name             : "Ali Shahanaghi"
   pronouns         : # example: "she/her"  
   bio              : "CFD Expert (D.Sc)"
