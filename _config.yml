@@ -23,7 +23,7 @@ repository               : "ali-Shaha.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/avatar.webp"
+  avatar           : "avatar.webp"
   name             : "Ali Shahanaghi"
   pronouns         : # example: "she/her"  
   bio              : "CFD Expert (D.Sc)"
