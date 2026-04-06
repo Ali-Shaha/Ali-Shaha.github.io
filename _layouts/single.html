@@ -47,21 +47,14 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% comment %}--- CUSTOM: decide download label based on thesis category ---{% endcomment %}
-        {% if page.category == "thesis" or page.type == "thesis" %}
-          {% assign download_label = "Download Thesis" %}
-        {% else %}
-          {% assign download_label = "Download Paper" %}
-        {% endif %}
-
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
-          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">{{ download_label }}</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}
-          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">{{ download_label }}</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
+          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.citation and page.paperurl and page.bibtexurl %}
-          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">{{ download_label }}</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.paperurl %}
-          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">{{ download_label }}</a></p>
+          <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
         {% elsif page.citation and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.slidesurl %}
@@ -69,7 +62,7 @@ layout: default
         {% elsif page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.paperurl and page.bibtexurl %}
-          <p style="font-size: smaller"><a href="{{ page.paperurl }}">{{ download_label }}</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          <p style="font-size: smaller"><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.bibtexurl %}
           <p style="font-size: smaller"><strong>Citation:</strong>: {{ page.citation }}<br /><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation %}

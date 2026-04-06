@@ -52,14 +52,21 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
+    {% comment %}--- CUSTOM: decide download label based on thesis category/type ---{% endcomment %}
+    {% if post.category == "thesis" or post.type == "thesis" %}
+      {% assign download_label = "Download Thesis" %}
+    {% else %}
+      {% assign download_label = "Download Paper" %}
+    {% endif %}
+
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">{{ download_label }}</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
-      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">{{ download_label }}</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation and post.paperurl and post.bibtexurl %}
-      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">{{ download_label }}</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl %}
-      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+      <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.paperurl }}">{{ download_label }}</a></p>
     {% elsif post.citation and post.slidesurl and post.bibtexurl %}
       <p><strong>Citation:</strong> {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
     {% elsif post.citation and post.slidesurl %}
@@ -69,9 +76,9 @@
     {% elsif post.citation %}
       <p><strong>Citation:</strong> {{ post.citation }}</p>
     {% elsif post.paperurl and post.bibtexurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p><a href=" {{ post.paperurl }} ">{{ download_label }}</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+      <p><a href=" {{ post.paperurl }} ">{{ download_label }}</a></p>
     {% elsif post.slidesurl and post.bibtexurl %}
       <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.slidesurl %}
