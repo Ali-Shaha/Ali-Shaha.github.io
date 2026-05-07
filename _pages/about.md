@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I’m **Ali Shahanaghi**, **CFD expert** in the Product Development team. My work focuses on using **computational fluid dynamics (CFD)** and modeling techniques to optimize energy conversion in Green Hydrogen technologies.
+Hello! I’m **Ali Shahanaghi**, **CFD expert** in the Product Development team at [Elcogen Oy, Finland](https://elcogen.com/). My work focuses on using **computational fluid dynamics (CFD)** and modeling techniques to optimize energy conversion in Green Hydrogen technologies.
 
 Previously, I was an academic researcher at **Aalto University**, Finland, where I completed my D.Sc. degree. I also received my M.Sc. from **Tarbiat Modares University** and B.Sc. from **Amirkabir University of Technology**, Tehran, Iran. My academic education is in **Mechanical Engineering** (Energy Conversion), with a focus on **CFD**.
 
