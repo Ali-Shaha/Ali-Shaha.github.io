@@ -7,7 +7,7 @@ excerpt: 'ARCFoam framework combining dynamic mesh balancing, chemistry balancin
 date: 2023-12-01
 venue: 'Physics of Fluids'
 slidesurl: #'https://academicpages.github.io/files/slides3.pdf'
-paperurl: 'https://doi.org/10.1063/5.0174192'
+paperurl: 'https://doi.org/10.1063/5.0174778'
 citation: 'Shahanaghi, A., Karimkashi, S., Kaario, O., & Vuorinen, V. (2023). Efficient two-dimensional simulation of primary reference fuel ignition under engine-relevant thermal stratification. <i>Physics of Fluids</i>, 35(12).'
 ---
 
