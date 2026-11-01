@@ -12,6 +12,7 @@ _site/
 # Python/Jupyter
 markdown_generator/
 scripts/
+files/
 talkmap.ipynb
 talkmap_out.ipynb
 talkmap.py
