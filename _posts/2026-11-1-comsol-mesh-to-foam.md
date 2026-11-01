@@ -295,7 +295,7 @@ Compare the cell count with the mesh statistics in COMSOL, and look at the patch
 
 <h2 class="cmf-automation-title" id="automate"></h2>
 
-# Automated Mesh Conversion
+# Automated Version
 
 
 Naming surfaces by clicking through the Gmsh GUI gets old quickly, especially when the geometry changes and you re-export the mesh again and again. So I wrote a small Python tool that does the conversion and the naming from the terminal. It:
