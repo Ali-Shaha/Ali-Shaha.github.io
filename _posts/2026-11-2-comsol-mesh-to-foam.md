@@ -94,7 +94,7 @@ details.cmf-faq code{background:rgba(110,118,129,.18);color:inherit;padding:.05e
 
 {% include toc %}
 
-You have a good mesh in COMSOL. Getting it into OpenFOAM takes a few specific export settings, and with the defaults `gmshToFoam` skips the second-order cells it cannot read. This post walks through the settings and the conversion that work, with a few widgets to play with along the way. At the end there is a script that automates the Gmsh part.
+You have a good mesh in COMSOL. Getting it into OpenFOAM takes a few specific export (**COMSOL**), conversion (**Gmsh**), and import (**OpenFOAM**) settings. This post walks through the settings and the conversion that work, with a few widgets to play with along the way. At the end there is a script that automates the Gmsh part.
 
 
 <div class="cmf-callout good">
@@ -232,7 +232,7 @@ The resulting `.msh` file can be imported into OpenFOAM with `gmshToFoam`. Figur
 
 <details class="cmf-faq"><summary>Why MSH version 2, and why ASCII?</summary><div><p>Newer Gmsh versions write MSH version 4 by default, but <code>gmshToFoam</code> expects the older version 2 ASCII format. If the converter complains about the file, check the version in the export window first.</p></div></details>
 
-## 3. Converting the mesh to OpenFOAM {#import}
+## 3. Importing the mesh to OpenFOAM {#import}
 
 The next step is to convert the `.msh` file with `gmshToFoam`. Place the file in the OpenFOAM case directory, which should contain the `system` and `constant` folders, and run:
 
