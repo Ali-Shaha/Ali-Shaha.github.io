@@ -265,3 +265,48 @@ html[data-theme="dark"] {
                 box-shadow 0.3s ease;
   }
 }
+
+/* ==========================================================================
+   Light widgets inside posts (callouts, cards, step cards, FAQ, tables)
+   The dark rules above give every code/table a dark background. These
+   widgets are light, so they keep light chips and light cells in dark mode.
+   ========================================================================== */
+html[data-theme="dark"] {
+  .cmf-card code,
+  .cmf-callout code,
+  .cmf-step code,
+  details.cmf-faq code {
+    background-color: rgba(110, 118, 129, 0.18);
+    color: inherit;
+    border: 0;
+  }
+
+  .cmf-order table {
+    background-color: #ffffff;
+
+    th {
+      background-color: #f1f3f5;
+      color: #1f2933;
+    }
+
+    td {
+      background-color: #ffffff;
+      color: #1f2933;
+    }
+
+    tr:nth-child(even),
+    tr:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+/* Table of contents ("On this page"): readable highlight instead of a bright lime block */
+html[data-theme="dark"] {
+  .toc__menu a:hover,
+  .toc__menu a.active,
+  .toc__menu li.active > a {
+    background-color: rgba(181, 215, 45, 0.18) !important;
+    color: #{$accent-color} !important;
+  }
+}
