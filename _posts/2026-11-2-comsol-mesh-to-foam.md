@@ -90,11 +90,17 @@ details.cmf-faq{border:1px solid #d0d7de;border-radius:10px;margin:.6rem 0;backg
 details.cmf-faq summary{cursor:pointer;padding:.6rem .9rem;font-weight:600;color:#1f2933}
 details.cmf-faq div{padding:0 .9rem .7rem;color:#1f2933}
 details.cmf-faq code{background:rgba(110,118,129,.18);color:inherit;padding:.05em .35em;border-radius:5px}
+
+/* Start the callouts below the TOC */
+.page__content > .cmf-callout {
+  clear: both;
+}
+
 </style>
 
 {% include toc %}
 
-You have a good mesh in COMSOL. Getting it into OpenFOAM takes a few specific export (**COMSOL**), conversion (**Gmsh**), and import (**OpenFOAM**) settings. This post walks through the settings and the conversion that work, with a few widgets to play with along the way. At the end there is a script that automates the Gmsh part.
+You have a good mesh in COMSOL. Getting it into OpenFOAM takes a few specific export (**COMSOL**), conversion (**Gmsh**), and import (**OpenFOAM**) settings. This post walks through the settings and the conversion that works, there are a few widgets to try with along the way. At the end a link to Python script for automating the Gmsh conversion step is provided.
 
 
 <div class="cmf-callout good">

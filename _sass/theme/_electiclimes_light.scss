@@ -134,3 +134,11 @@ footer {
     border-left: none;
   }
 }
+
+
+  .toc__menu a:hover,
+  .toc__menu a.active,
+  .toc__menu li.active > a {
+    background-color: #0214032e !important;
+    color: #{$primary-color} !important;
+  }
