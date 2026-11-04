@@ -18,7 +18,7 @@ Use COMSOL Multiphysics mesh in OpenFOAM for CFD simulations. This tutorial intr
 .cmf-card p{margin:.4rem 0;color:#1f2933}
 .cmf-card code,.cmf-callout code{background:rgba(110,118,129,.18);color:inherit;padding:.05em .35em;border-radius:5px}
 .cmf-muted{color:#52606d !important;font-size:.92em}
-.cmf-automation-title{margin-top:3.2em;padding-top:1.1em;border-top:2px solid #98C326;font-size:1.45em;line-height:1.3;letter-spacing:-.02em}
+#automate{margin-top:3.2em;padding-top:1.1em;border-top:2px solid #98C326;font-size:1.45em;line-height:1.3;letter-spacing:-.02em}
 .cmf-callout{border-left:4px solid #2f81f7;background:#eef5ff;color:#1f2933;padding:.7rem 1rem;border-radius:0 8px 8px 0;margin:1.2rem 0}
 .cmf-callout p,.cmf-callout ul{margin:.3rem 0;color:#1f2933}
 .cmf-callout.warn{border-left-color:#d29922;background:#fff8e6}
@@ -300,9 +300,7 @@ Compare the cell count with the mesh statistics in COMSOL, and look at the patch
 
 
 
-<h2 class="cmf-automation-title" id="automate"></h2>
-
-# Automated Gmsh script
+# Automated Gmsh script {#automate}
 
 
 Naming surfaces by clicking through the Gmsh GUI can be automated, especially when the geometry changes and you re-export the mesh again. So I wrote a Python tool/script that does the conversion and the naming from the terminal. It:
