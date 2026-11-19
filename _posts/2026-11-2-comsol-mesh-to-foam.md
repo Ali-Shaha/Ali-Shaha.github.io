@@ -224,7 +224,9 @@ Open the exported `.nas` file in Gmsh, then:
 1. **Name the boundaries.** Go to **Geometry → Physical groups → Add** and select **Surface**. In the physical group window, name each boundary group and assign the corresponding surfaces to it. The physical-group definitions are saved in a `.geo` file. Note that surfaces left unassigned will appear under `defaultFaces` after conversion to the OpenFOAM mesh.
 2. **Name the volumes.** Repeat the process with **Geometry → Physical groups → Add → Volume**, and assign a label to each domain.
 3. **Mesh module.** Under **Mesh → Define**, select **3D** and, if desired, **Optimize 3D**.
-4. **Export.** Go to **File → Export**, select **Mesh – Gmsh MSH** from the drop-down menu, and choose **Version 2 ASCII** in the export window.
+4. **Export.** Go to **File → Export**, select **Mesh – Gmsh MSH** from the drop-down menu, and choose **Version 2 ASCII** in the export window.4.
+> **Note**: Leave "**Save all elements**" and "**Save parametric coordinates**" boxes unchecked.
+
 
 The resulting `.msh` file can be imported into OpenFOAM with `gmshToFoam`. Figure 2 shows the Gmsh session, with the physical-group and mesh menus highlighted.
 
