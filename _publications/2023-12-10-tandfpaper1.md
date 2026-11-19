@@ -2,7 +2,7 @@
 title: "A diagnostic approach to assess the effect of temperature stratification on the combustion modes of gasoline surrogates"
 collection: publications
 category: manuscripts
-permalink: https://research.aalto.fi/en/publications/a-diagnostic-approach-to-assess-the-effect-of-temperature-stratif/
+permalink: #https://research.aalto.fi/en/publications/a-diagnostic-approach-to-assess-the-effect-of-temperature-stratif/
 excerpt: "Development of an a-priori diagnostics tool to separate deflagration and auto-ignition combustion modes in spark-ignition engines, considering diffusion effects in NTC chemistry of gasoline surrogates."
 date: 2023-12-10
 venue: "Combustion Science and Technology"

@@ -2,7 +2,7 @@
 title: "Efficient two-dimensional simulation of primary reference fuel ignition under engine-relevant thermal stratification"
 collection: publications
 category: manuscripts
-permalink: https://pubs.aip.org/aip/pof/article/35/12/126102/2926377
+permalink: #https://pubs.aip.org/aip/pof/article/35/12/126102/2926377
 excerpt: 'ARCFoam framework combining dynamic mesh balancing, chemistry balancing, and adaptive mesh refinement for simulating engine knock and combustion modes in OpenFOAM'
 date: 2023-12-01
 venue: 'Physics of Fluids'

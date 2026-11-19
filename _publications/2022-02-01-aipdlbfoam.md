@@ -2,7 +2,7 @@
 title: "Fast reactive flow simulations using analytical Jacobian and dynamic load balancing in OpenFOAM"
 collection: publications
 category: manuscripts
-permalink: https://pubs.aip.org/aip/pof/article/34/2/021801/2846511
+permalink: #https://pubs.aip.org/aip/pof/article/34/2/021801/2846511
 excerpt: 'Detailed CFD simulation tutorials for DLBFoam library.'
 date: 2022-02-01
 venue: 'Physics of Fluids'

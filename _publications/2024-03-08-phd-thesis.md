@@ -2,7 +2,7 @@
 title: "Numerical modeling of thermal stratification driven combustion regimes"
 collection: publications
 category: thesis
-permalink: https://urn.fi/URN:ISBN:978-952-64-1689-2
+permalink: #https://urn.fi/URN:ISBN:978-952-64-1689-2
 excerpt: 'My Ph.D thesis on CFD about various combustion modes in spark ignition engines'
 date: 2024-03-08
 venue: 'Aalto University'

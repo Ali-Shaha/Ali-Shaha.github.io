@@ -2,7 +2,7 @@
 title: "Temperature stratification induced ignition regimes for gasoline surrogates at engine-relevant conditions"
 collection: publications
 category: manuscripts
-permalink: https://research.aalto.fi/en/publications/temperature-stratification-induced-ignition-regimes-for-gasoline-
+permalink: #https://research.aalto.fi/en/publications/temperature-stratification-induced-ignition-regimes-for-gasoline-
 excerpt: "Investigation of NTC chemistry effects on ignition modes for gasoline surrogates using 1D simulations, analyzing coolspots, secondary ignition kernels, and off-centered ignition."
 date: 2024-08-17
 venue: "Combustion Science and Technology"
